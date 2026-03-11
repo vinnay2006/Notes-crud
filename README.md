@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+📌 Project Overview
+CloudNotes is a full-stack personal productivity application that allows users to securely create, manage, and organize their daily tasks or thoughts.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The platform features a secure User Authentication system where individuals can sign up to maintain their private workspace. Once logged in, users have full control over their notes, with all data being persisted in a cloud database and protected by JWT-based authorization.
 
-## Available Scripts
+🛠 Tech Stack
+Frontend: React.js, HTML5, CSS3 (Tailwind/Bootstrap), JavaScript
+Backend: Node.js, Express.js
+Database: MongoDB (Mongoose for Schema modeling)
+Authentication: JWT (JSON Web Tokens) & Bcrypt.js (for password hashing)
+Tools: Git, GitHub, Postman
 
-In the project directory, you can run:
+✨ Features
+Secure Authentication: User registration and login with encrypted passwords.
+JWT Protected Routes: Only authenticated users can access their specific notes; unauthorized requests are blocked by middleware.
 
-### `npm start`
+Full CRUD Functionality:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Create: Quick-add notes with titles and descriptions.
+Read: Fetch and display all notes belonging to the logged-in user.
+Update: Edit existing notes in real-time.
+Delete: Remove notes with a single click.
+User-Specific Data: Logic to ensure User A cannot view or edit User B’s notes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Folder structure 
+My-Notes/
+├── backend/                # Node.js & Express Logic
+│   ├── middleware/         # fetchuser.js (JWT validation filter)
+│   ├── models/             # User.js and Note.js Schemas
+│   ├── routes/             # auth.js (Login/Signup) & notes.js (CRUD)
+│   └── db.js               # MongoDB connection logic
+├── src/                    # Frontend React Architecture
+│   ├── components/         # Navbar, NoteItem, AddNote, Home, About
+│   ├── context/            # NoteState.js (Global state for CRUD operations)
+│   ├── App.js              # Centralized routing & User Auth checks
+│   └── index.js            # Entry point
+└── public/                 # Static assets & Icons
+##Screenshots
+<img width="1920" height="1080" alt="Screenshot (501)" src="https://github.com/user-attachments/assets/ac8584e8-36f3-4947-9d33-378281cd2f2e" />
+<img width="1920" height="1080" alt="Screenshot (502)" src="https://github.com/user-attachments/assets/871c4ac2-d535-4478-8f58-3683a389a00a" />
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
