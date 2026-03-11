@@ -1,5 +1,5 @@
 📌 Project Overview
-CloudNotes is a full-stack personal productivity application that allows users to securely create, manage, and organize their daily tasks or thoughts.
+MyNotes is a full-stack personal productivity application that allows users to securely create, manage, and organize their daily tasks or thoughts.
 
 The platform features a secure User Authentication system where individuals can sign up to maintain their private workspace. Once logged in, users have full control over their notes, with all data being persisted in a cloud database and protected by JWT-based authorization.
 
