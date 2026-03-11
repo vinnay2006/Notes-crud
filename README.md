@@ -38,5 +38,7 @@ My-Notes/
 ##Screenshots
 <img width="1920" height="1080" alt="Screenshot (501)" src="https://github.com/user-attachments/assets/ac8584e8-36f3-4947-9d33-378281cd2f2e" />
 <img width="1920" height="1080" alt="Screenshot (502)" src="https://github.com/user-attachments/assets/871c4ac2-d535-4478-8f58-3683a389a00a" />
+<img width="1920" height="1080" alt="Screenshot (506)" src="https://github.com/user-attachments/assets/09b81466-a753-4c99-9674-e5673e7b4ea3" />
+
 
 
