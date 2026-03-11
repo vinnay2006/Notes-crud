@@ -4,11 +4,11 @@ MyNotes is a full-stack personal productivity application that allows users to s
 The platform features a secure User Authentication system where individuals can sign up to maintain their private workspace. Once logged in, users have full control over their notes, with all data being persisted in a cloud database and protected by JWT-based authorization.
 
 🛠 Tech Stack
-Frontend: React.js, HTML5, CSS3 (Tailwind/Bootstrap), JavaScript
+Frontend: React.js, HTML5, CSS, JavaScript
 Backend: Node.js, Express.js
 Database: MongoDB (Mongoose for Schema modeling)
 Authentication: JWT (JSON Web Tokens) & Bcrypt.js (for password hashing)
-Tools: Git, GitHub, Postman
+Tools: Git, GitHub, Postman,Thunderclient
 
 ✨ Features
 Secure Authentication: User registration and login with encrypted passwords.
